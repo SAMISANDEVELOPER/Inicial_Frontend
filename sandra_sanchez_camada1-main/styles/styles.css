@@ -1,0 +1,568 @@
+
+
+@import url('https://fonts.google.com/specimen/Be+Vietnam');
+
+/*COLORES*/
+:root {
+    --color-primario-anaranjado: hsl(12, 88%, 59%);
+    --color-primario-azul: hsl(228, 39%, 23%);
+    --color-neutro-gris: hsl(227, 12%, 61%);
+    --color-neutro-azul: hsl(233, 12%, 13%);
+    --color-neutro-anaranjado: hsl(13, 100%, 96%);
+    --color-neutro-blanco: hsl(0, 0%, 98%);
+}
+
+/* Generales*/
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: var(--color-primario-azul);
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+h3 {
+    font-size: 16px;
+}
+
+p {
+    color: var(--color-neutro-gris);
+    line-height: 24px;
+    font-weight: bold;
+    
+}
+
+button {
+    background-color: var(--color-primario-anaranjado);
+    border: none;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 40px;   
+}
+
+button:hover {
+    cursor: row-resize;
+    opacity: 0.7; 
+    background-color: sandybrown;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;  
+}
+
+a {
+    text-decoration: none
+}
+
+/*HEADER*/
+header {
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    height: 100px;
+    width: 100%;
+}
+
+/*LOGO*/
+.logo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*BANNER*/
+.banner {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;  
+}
+
+/*CONTENIDO PRINCIPAL*/
+.main-content {
+    margin: 160px 10px 60px 10px;
+}
+
+.items {
+    margin-left: 30px;
+    margin-top: 50px;
+    
+}
+
+.items h3 {
+    background-color: var(--color-neutro-anaranjado);
+    text-align: left;
+    padding: 9px 0; 
+}
+
+.items span {
+    background-color: var(--color-primario-anaranjado);
+    border-radius: 50px;
+    color: white;
+    padding: 9px 20px;
+}
+
+/*TARJETAS*/
+.opinions {
+    display: flex;
+}
+
+.opinions h2 {
+    margin-bottom: 100px;
+}
+
+.tarjeta {
+    background-color: var(--color-neutro-blanco);
+    margin: 30px 0 100px 0px;
+}
+
+.tarjeta img {
+    height: 100px;
+    top: -40px;
+    position: relative;
+    
+}
+
+.tarjeta p {
+    text-align: center;
+    padding: 20px;
+}
+
+/*SUBSCRICIONES*/
+.subscripciones {
+    background-color: var(--color-primario-anaranjado);
+    color: var(--color-neutro-blanco);
+    width: 100%; 
+}
+
+.subscripciones h1 {
+    font-size: 34px;
+    padding: 50px 40px 10px 40px;
+}
+
+.subscripciones button {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 1.2em;
+    background:  hsl(12, 88%, 59%);
+    border: 1px solid;
+    border-color: #eaf1f3;
+    position: relative;
+}
+
+
+
+/*FOOTER*/
+footer {
+    background-color: var(--color-neutro-azul);
+    margin-top: 0px;
+    position: relative;
+}
+
+/*FORM FOOTER*/
+
+.form {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    margin-top: 50px;
+}
+
+input {
+    border-radius: 70px;
+    height: 50px;
+    padding: 00px 20px;
+    width: 150px;
+    
+}
+
+form button {
+    padding: 11px 30px;
+
+}
+
+/*MENUS FOOTER*/
+.menu-footer{
+    display: flex;
+    margin: 50px;
+}
+
+.menu-footer li {
+    color: white;
+    list-style: none;
+    font-size: 17px;
+    justify-content: space-between;
+    transition: color 100ms linear;
+    margin: 10px 10px;
+    padding: 10px 0px 0px 0px;
+    flex-direction: left;
+    
+}
+
+.menu-footer a {
+    color:white;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.menu-footer li:hover {
+    color: var(--color-primario-anaranjado);
+    justify-content: space-between;
+   
+    
+}
+
+
+/*DERECHOS DE AUTOR*/
+.Web-developer{
+    border-style:dashed;
+    left: 3px;;
+    position: relative;
+    }
+
+
+@media only screen and (min-width: 375px) {
+
+
+    /*HAMBURGER*/
+    .hamburger-menu {
+        cursor: row-resize;
+        margin-top: 5px;
+        float: right;
+        height: 4px;
+        width: 30px; 
+    }
+
+    /* MENU PC*/
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-desktop button {
+        display: none;
+    }
+
+    /*BANNER*/
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner img {
+        height: 290px;
+        margin: 0 auto
+    }
+
+    /*CONTENIDO PRINCIPAL*/
+
+    .items h3 {
+        width: 100%;
+    }
+
+    .items p {
+        text-align: left;
+        margin-left: 10px
+    }
+
+    .items span {
+        text-align: left;
+        position: relative;
+        right: 10px
+    }
+
+    /*TARJETAS*/
+    .opinions {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    /*SUBSCRICIONES*/
+    .subscripciones {
+        text-align: center;
+    }
+
+    /*MENUS FOOTER*/
+    .menu-footer{
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .menu-footer li {
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .icons img {
+        height: 35px;
+        margin: 0 15px;
+    }
+
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 90px;
+        margin-top: 90px;
+    }
+
+
+}
+
+    @media only screen and (min-width: 1440px) {
+
+        /*HAMBURGER*/
+        .hamburger-menu {
+            display: none;
+        }
+
+        /* pantalla 1440*/
+        .menu-desktop {
+            display: flex;
+            margin-top: -15px;
+            left: 50px;
+            position: relative;
+        }
+
+        .nav li {
+            cursor: row-resize;
+            display:inline-block;
+            padding: 20px;
+        }
+
+        .nav li a{
+            color: var(--color-primario-anaranjado);
+            text-decoration: solid;
+        }
+
+        .nav li a:hover {
+            color: var(--color-neutro-anaranjado);
+            cursor: row-resize;
+            opacity: 1;
+            background-color: tomato;
+            border-radius: 2px;
+
+        }
+
+
+        .menu-desktop button {
+            display: block;
+            float: left;
+            height: fit-content;
+            margin-left: 250px;
+        }
+
+        /*BANNER*/
+        .banner {
+            flex-direction: row-reverse;
+        }
+
+        .banner img {
+            height: 400px;
+            left: 10%;
+            position:relative;
+            right: 0%;
+            top: -85%;
+        }
+
+        .texto-banner {
+            left: 10%;
+            text-align:left;
+            position:relative;
+            width: 400px;
+        }
+
+        .texto-banner p {
+            text-align:left;
+        }
+
+        .banner button {
+            margin-left: 17em;
+            margin-top: 20em;
+            float: left;
+            position: absolute;
+        }
+
+        /*CONTENIDO PRINCIPAL*/
+
+        .main-content {
+            height: 600px;
+            display: flex;
+            width: 100%;
+        }
+
+        .tex-differences {
+            position: absolute;
+            right: 60%;
+            width: 400px;
+        }
+
+        .tex-differences h2 {
+            padding-bottom: 20px;
+            text-align: left;
+        }
+
+        .tex-differences p {
+            text-align: left;
+        }
+
+        .items {
+            left: 50%;
+            margin-top: -5px;
+            position: absolute;
+            width: 500px;
+        }
+
+        .items h3 {
+            background: none;
+        }
+
+        /*TARJETAS*/
+        .opinions * {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin: 0;
+        }
+
+        .tarjeta {
+            height: 300px;
+            width: 40%; 
+        }
+
+        .comentario h3 {
+            left: 25%;
+            position: relative;
+            top: 70px;
+        }
+
+        .comentario p {
+            bottom: -100px;
+            left: -100px;
+            position: relative;
+        }
+
+
+        .tarjeta img {
+            height: 130px;
+            left: 41.32%;
+            position: relative;
+            top: -25%;
+            right: 41.32%;
+        }
+
+        .opinions h2 {
+            left: 642px;
+            margin-bottom: 100px;
+            position: relative;
+            width: 400px;
+        }
+
+        .tarjetas-button {
+            left: 630px;
+            margin: 50px;
+            position: relative;
+            width: 200px;
+                
+        }
+    
+        .subscripciones{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            text-align:  center;
+        }
+        .subscripciones button{
+            margin-top: 90px;
+        }
+
+        /*FOOTER*/
+        footer{
+            width: 100%;
+        }
+        .contacto-menu{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center; 
+        }
+
+        .menus-li {
+            margin-left: 50px;
+            position: space-between;
+            right: 50px;
+        }
+        .menu-footer{
+            justify-content: space-evenly;
+        }
+        .icons img {
+            position: relative;
+            right: 150px;
+            top:200px;
+        }
+
+        .footer_logo {
+            left:100px;
+            position: relative; 
+        }
+
+        .footer_bottom p {
+            font-weight: 100;
+            font-size: 14px;
+            position: center;
+        }
+
+        form {
+            margin-right: 40px;
+        }
+
+        input {
+            border-radius: 90px;
+            height: 50px;
+            padding: 00px 20px;
+            width: 200px;
+        }
+
+        .icons img {
+            height: 40px;
+            margin: 0 5px;
+        }
+
+        .Web-developer{
+        position: relative;
+        left:1px;
+        border-style:dashed;
+        
+        }
+}
